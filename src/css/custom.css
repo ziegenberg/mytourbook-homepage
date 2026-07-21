@@ -1,0 +1,32 @@
+/**
+ * Any CSS included here will be global. The classic template bundles Infima by
+ * default. Infima is a CSS framework designed to work well for content-centric
+ * websites.
+ *
+ * Brand color: MyTourbook green (#84AB1B). The shade scale below is derived
+ * from that hue for both light and dark modes.
+ */
+
+:root {
+  --ifm-color-primary: #84ab1b;
+  --ifm-color-primary-dark: #709117;
+  --ifm-color-primary-darker: #627f14;
+  --ifm-color-primary-darkest: #4d6212;
+  --ifm-color-primary-light: #95bd27;
+  --ifm-color-primary-lighter: #a2ce2b;
+  --ifm-color-primary-lightest: #aed740;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, a lighter palette is used in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #98c51f;
+  --ifm-color-primary-dark: #7a9e19;
+  --ifm-color-primary-darker: #709117;
+  --ifm-color-primary-darkest: #627f14;
+  --ifm-color-primary-light: #abdd26;
+  --ifm-color-primary-lighter: #b2e038;
+  --ifm-color-primary-lightest: #bce452;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,19 @@
+# Dependencies
+/node_modules
+
+# Build output
+/build
+
+# Docusaurus generated
+/.docusaurus
+/.cache-loader
+
+# pnpm
+/pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+
+# Env
+.env.local
+.env.*.local

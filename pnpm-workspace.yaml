@@ -1,0 +1,5 @@
+# pnpm v11 gates dependency build scripts. @swc/core (used by @docusaurus/faster)
+# and core-js need their postinstall scripts to run, so they are approved here.
+allowBuilds:
+  '@swc/core': true
+  core-js: true
