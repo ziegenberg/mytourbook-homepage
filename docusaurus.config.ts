@@ -37,7 +37,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/ziegenberg/mytourbook-homepage/tree/main/',
+          editUrl:
+            'https://github.com/ziegenberg/mytourbook-homepage/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -45,7 +46,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/ziegenberg/mytourbook-homepage/tree/main/',
+          editUrl:
+            'https://github.com/ziegenberg/mytourbook-homepage/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',

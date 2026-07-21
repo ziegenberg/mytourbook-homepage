@@ -1,0 +1,23 @@
+# Build output & generated caches
+build/
+.docusaurus/
+.cache-loader/
+
+# Dependencies
+node_modules/
+
+# Lockfiles (machine-generated)
+pnpm-lock.yaml
+
+# Binary / static assets (no text formatter)
+static/
+*.svg
+*.png
+*.ico
+*.jpg
+*.jpeg
+*.webp
+
+# Local-only agent / planning docs (git-excluded, not part of the site)
+.pi/
+AGENTS.md

@@ -22,7 +22,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            href={DOWNLOAD_URL}>
+            href={DOWNLOAD_URL}
+          >
             Download the latest release
           </Link>
         </div>
@@ -36,7 +37,8 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="MyTourbook is a desktop application for visualizing and analyzing GPS tour data.">
+      description="MyTourbook is a desktop application for visualizing and analyzing GPS tour data."
+    >
       <HomepageHeader />
       <main>
         <div className="container">
@@ -44,10 +46,11 @@ export default function Home(): ReactNode {
             <div className="col col--6 margin-vert--lg">
               <Heading as="h2">What is MyTourbook?</Heading>
               <p>
-                MyTourbook is a desktop application for visualizing and analyzing
-                GPS tours recorded by a GPS device, bike computer, exercise
-                computer, or ergometer. A <em>tour</em> — a single recorded
-                activity — is the core entity MyTourbook helps you explore.
+                MyTourbook is a desktop application for visualizing and
+                analyzing GPS tours recorded by a GPS device, bike computer,
+                exercise computer, or ergometer. A <em>tour</em> — a single
+                recorded activity — is the core entity MyTourbook helps you
+                explore.
               </p>
               <p>
                 Import your tours, inspect elevation, speed, heart rate, and

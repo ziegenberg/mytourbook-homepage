@@ -1,0 +1,30 @@
+{
+  "config": {
+    "default": true,
+    // Long lines are common in MDX/MD; Prettier handles wrapping where it can.
+    "MD013": false,
+    // MDX freely uses inline HTML and JSX expressions.
+    "MD033": false,
+    // MDX pages start with YAML frontmatter, not a top-level heading.
+    "MD041": false,
+    // Docusaurus front-matter `title:` is page metadata, not a body heading,
+    // so do not count it as the document's H1.
+    "MD025": {"front_matter_title": ""},
+    // MDX JS comments like `{/* truncate */}` make the `*` look like emphasis
+    // markers to the Markdown parser.
+    "MD037": false,
+    // Allow the same heading text in different sections.
+    "MD024": {"siblings_only": true},
+    // Allow trailing punctuation in headings, e.g. "What is MyTourbook?".
+    "MD026": false,
+  },
+  "ignores": [
+    "node_modules/**",
+    "build/**",
+    ".docusaurus/**",
+    ".cache-loader/**",
+    ".pi/**",
+    "AGENTS.md",
+    "pnpm-lock.yaml",
+  ],
+}
