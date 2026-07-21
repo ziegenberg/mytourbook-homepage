@@ -8,13 +8,17 @@
     "start": "docusaurus start",
     "dev": "docusaurus start",
     "build": "docusaurus build",
+    "prebuild": "pnpm lint",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "lint": "eslint . && prettier --check . && markdownlint-cli2 \"**/*.md\" \"**/*.mdx\"",
+    "format": "prettier --write . && markdownlint-cli2 --fix \"**/*.md\" \"**/*.mdx\"",
+    "test:spell": "cspell lint ."
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",
@@ -31,8 +35,16 @@
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
+    "@eslint/js": "^9.39.5",
     "@types/react": "^19.0.0",
-    "typescript": "~6.0.2"
+    "cspell": "^10.0.1",
+    "eslint": "^9.39.5",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "markdownlint-cli2": "^0.23.1",
+    "prettier": "^3.9.5",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.65.0"
   },
   "browserslist": {
     "production": [

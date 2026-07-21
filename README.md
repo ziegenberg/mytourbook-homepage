@@ -39,9 +39,25 @@ pnpm serve
 pnpm typecheck
 ```
 
+## Quality
+
+The project ships a structural quality gate that runs before every `pnpm build`
+(see the `prebuild` script). It covers ESLint (TypeScript flat config), Prettier
+formatting checks, and markdownlint (relaxed for MDX). cspell spell-checking is
+advisory and never blocks a build.
+
+```bash
+pnpm lint        # structural gate: ESLint + Prettier --check + markdownlint (runs before `pnpm build`)
+pnpm format      # apply formatting: Prettier --write + markdownlint --fix
+pnpm test:spell  # advisory spell-check (en-GB, non-blocking)
+```
+
+The build fails fast on the first structural violation, so broken MDX, lint
+errors, or formatting drift never reach the deployed site.
+
 ## Project layout
 
-```
+```text
 docs/           Documentation pages (MDX)
 blog/           Release notes — one blog post per MyTourbook release (MDX)
 src/            Theme overrides, pages, and global CSS
